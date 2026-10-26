@@ -1,0 +1,29 @@
+Esitehtävä: Y-tunnus-rikastuspalvelu
+
+Tausta
+Autokaupan asiakasrekisteriin (esim. NetSuiteen) tuodaan yritysasiakkaita CSV-listoina, joissa on usein vain Y-tunnus tai yrityksen nimi. Haluamme, että tiedot täydentyvät automaattisesti viralliseen rekisteriin pohjautuen.
+
+Tehtävä
+Rakenna pieni palvelu, joka:
+
+    ottaa vastaan CSV:n, jossa on Y-tunnuksia ja/tai yritysnimiä (kuvitteellinen, noin 20-50 rivin esimerkkitiedosto kuuluu palautukseen),
+    hakee yritysten tiedot PRH:n avoimesta YTJ-rajapinnasta (https://avoindata.prh.fi/opendata-ytj-api/v3/companies),
+    palauttaa normalisoidun tuloksen JSONina. Sisällön (esim. nimi, Y-tunnus, yritysmuoto, päätoimiala, osoite, tila) saat valita itse,
+    mapittaa lopuksi tuloksen sellaiseen muotoon, että se olisi helppo viedä asiakasrekisteriin (kuvitteellinen “customer”-record). NetSuite-pääsyä ei tarvita, tärkeää on perustella mappaus.
+
+Teknologia: JavaScript/Node. Käyttöliittymä on vapaaehtoinen (esim. pieni React-näkymä, jossa tulokset ja virheet näkyvät), ja sen voi jättää pois, jos aika loppuu.
+
+Palautus: Git-repo (tai zip), jossa on README. README:ssä kerro:
+
+    miten ajat ratkaisun,
+    mitä oletuksia teit ja miksi,
+    mitä päätöksiä teit ja miksi,
+    mitä jätit tekemättä ja mitä tekisit seuraavaksi,
+    miten käytit AI-työkaluja (esim. Claude) ja mihin.
+
+Muuta
+
+    Tehtävänanto on tarkoituksella väljä. Emme anna lisätietoja tai tarkennuksia, vaan haluamme nähdä, miten viet asian itsenäisesti maaliin parhaan näkemyksesi mukaan.
+    Tee tarvittavat oletukset itse ja kirjaa ne READMEen.
+    Älä tee kaikkea. Jos aika loppuu, priorisoi ja kerro, mitä jätit pois.
+    Palaamme ratkaisuun haastattelussa (noin 30 min), jossa käydään läpi tekemiäsi valintoja.

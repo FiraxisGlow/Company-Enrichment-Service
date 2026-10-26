@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "format": "prettier --write \"server/src/**/*.ts\" \"client/src/**/*.{ts,tsx}\"",
+    "format:check": "prettier --check \"server/src/**/*.ts\" \"client/src/**/*.{ts,tsx}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10"
+  }
+}

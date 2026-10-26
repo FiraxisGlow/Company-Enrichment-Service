@@ -1,0 +1,9 @@
+services:
+  server:
+    build: ./server
+  client:
+    build: ./client
+    ports:
+      - "3000:80"
+    depends_on:
+      - server
